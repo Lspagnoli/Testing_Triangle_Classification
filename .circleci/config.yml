@@ -1,0 +1,19 @@
+version: 2.1
+
+jobs:
+  test:
+    docker:
+      - image: cimg/python:3.13
+    steps:
+      - checkout
+      - run:
+          name: Install dependencies
+          command: pip install requests pytest
+      - run:
+          name: Run tests
+          command: pytest GitHubApi567-hw4a/test_github_info.py
+
+workflows:
+  test-workflow:
+    jobs:
+      - test
