@@ -1,0 +1,8 @@
+https://github.com/Lspagnoli/Testing_Triangle_Classification Links to an external site.
+
+ 
+
+-This assignment was somewhat straight forward. The only slight challenge that was encountered was ensuring I was using PyTest correctly and some slight modifications to output of triangle.py to test easier.
+-This was a great introduction to testing and was quick and informative.
+-The tools themselves did not give me any issues. I am using VSC with PyTest. The one thing I have to burn into my memory is to run the tests via my terminal with `pytest test_triangle.py` as opposed to hitting the VSC run button as I usually do for quick Python programming. Additionally, my experience with testing and unit testing is from Junit, Spring, and Mockito so it is taking me some time to get fluent with PyTest syntax.
+-As far as criteria goes, I first created 1 singular unit test to test the classify_triangle() function as a whole with the goal of using assert cases to test each triangle variation. Then I realized it would be better and more informative if I were to create multiple tests within my test suite. In the future I may even create a class in which to group my tests. My criteria for testing was manually creating triangles that I knew would give me each variation of triangle. I also added some duplicate tests but swapping which 'side' a, b, or c was which to ensure it was thoroughly tested. Lastly I added a validity statement in the triangle.py file to make sure it would catch side lengths of 0 and then added the test case for that functionality. I found myself bouncing back and forth between the two files adding and modifying things. 
